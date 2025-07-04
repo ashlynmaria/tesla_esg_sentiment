@@ -72,8 +72,18 @@ This analyzer is built for modularity and reusability, making it suitable for pr
 
 📂 Project Structure
 --------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Tesla-ESG-Sentiment-Analyzer/  ├── data/  │   └── tesla_esg.csv           # Raw GDELT Tesla ESG data (example/placeholder)  ├── artifacts/  │   └── plots/  │       ├── sentiment_dashboard.png     # Generated sentiment visualization  │       └── esg_theme_analysis.png      # Generated ESG theme visualization  ├── tesla_esg.db                # SQLite database (generated upon run)  ├── tesla_esg_cleaned_for_bi.csv # Exported data for BI tools (generated upon run)  ├── main.py                     # Main script to run the analysis (your provided code will be here)  ├── README.md                   # Project README file  └── requirements.txt            # Python dependencies   `
+Tesla-ESG-Sentiment-Analyzer/
+├── data/
+│   └── tesla_esg.csv           # Raw GDELT Tesla ESG data (example/placeholder)
+├── artifacts/
+│   └── plots/
+│       ├── sentiment_dashboard.png     # Generated sentiment visualization
+│       └── esg_theme_analysis.png      # Generated ESG theme visualization
+├── tesla_esg.db                # SQLite database (generated upon run)
+├── tesla_esg_cleaned_for_bi.csv # Exported data for BI tools (generated upon run)
+├── main.py                     # Main script to run the analysis
+├── README.md                   # Project README file
+└── requirements.txt            # Python dependencies
 
 ⚙️ Setup and Installation
 -------------------------
@@ -82,25 +92,37 @@ To get this project up and running on your local machine, follow these steps:
 
 ### 1\. Clone the Repository
 
-Bash
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/your-username/Tesla-ESG-Sentiment-Analyzer.git  cd Tesla-ESG-Sentiment-Analyzer   `
-
+```bash
+git clone [https://github.com/your-username/Tesla-ESG-Sentiment-Analyzer.git](https://github.com/your-username/Tesla-ESG-Sentiment-Analyzer.git)
+cd Tesla-ESG-Sentiment-Analyzer
+```
 ### 2\. Create a Virtual Environment (Recommended)
 
-Bash
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python -m venv venv  # On Windows  .\venv\Scripts\activate  # On macOS/Linux  source venv/bin/activate   `
+```bash
+python -m venv venv
+# On Windows
+.\venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
+```
 
 ### 3\. Install Dependencies
 
-Install all required Python packages using pip:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install -r requirements.txt   `
-
+```bash
+pip install -r requirements.txt
+```
 **requirements.txt content:**
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pandas  numpy  matplotlib  seaborn  plotly  sqlite3 # Usually built-in with Python, but good to list  warnings # Built-in  re # Built-in   `
+```bash
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+sqlite3 # Usually built-in with Python, but good to list
+warnings # Built-in
+re # Built-in
+```
 
 _(Note: sqlite3, warnings, re, logging, datetime, timedelta, and collections are part of Python's standard library and typically don't need explicit installation.)_
 
