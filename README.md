@@ -72,19 +72,21 @@ This analyzer is built for modularity and reusability, making it suitable for pr
 
 📂 Project Structure
 --------------------
+
+```plaintext
 Tesla-ESG-Sentiment-Analyzer/
 ├── data/
-│   └── tesla_esg.csv           # Raw GDELT Tesla ESG data (example/placeholder)
+│   └── tesla_esg.csv                 # Raw GDELT Tesla ESG data (example/placeholder)
 ├── artifacts/
 │   └── plots/
-│       ├── sentiment_dashboard.png     # Generated sentiment visualization
-│       └── esg_theme_analysis.png      # Generated ESG theme visualization
-├── tesla_esg.db                # SQLite database (generated upon run)
-├── tesla_esg_cleaned_for_bi.csv # Exported data for BI tools (generated upon run)
-├── main.py                     # Main script to run the analysis
-├── README.md                   # Project README file
-└── requirements.txt            # Python dependencies
-
+│       ├── sentiment_dashboard.png   # Generated sentiment visualization
+│       └── esg_theme_analysis.png    # Generated ESG theme visualization
+├── tesla_esg.db                      # SQLite database (generated upon run)
+├── tesla_esg_cleaned_for_bi.csv      # Exported data for BI tools (generated upon run)
+├── main.py                           # Main script to run the analysis
+├── README.md                         # Project README file
+└── requirements.txt                  # Python dependencies
+```
 ⚙️ Setup and Installation
 -------------------------
 
