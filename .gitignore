@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.mo
+*.db
+*.sqlite3
+
+# Django migrations
+*/migrations/
+*/migrations/*.pyc
+
+# Static files
+staticfiles/
+static/
+media/
+
+# Node modules (if you have npm dependencies)
+node_modules/
+
+# IDE and editor junk
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker artifacts
+*.pid
+*.tar
+*.gz
+
+# Environment / config
+.env
+*.env
+
+# Coverage and testing
+.coverage
+htmlcov/
+coverage.xml
+
+# pytest
+.pytest_cache/
+
+# Build artifacts
+dist/
+build/
+
+# Kubernetes config
+*.yaml
+*.yml
+
+# Heroku
+*.sqlite3
+*.log
+
+# Backup files
+*~
+data/*.csv
