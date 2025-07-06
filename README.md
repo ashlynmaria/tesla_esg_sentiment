@@ -83,8 +83,10 @@ Tesla-ESG-Sentiment-Analyzer/
 │       └── esg_theme_analysis.png    # Generated ESG theme visualization
 ├── tesla_esg.db                      # SQLite database (generated upon run)
 ├── tesla_esg_cleaned_for_bi.csv      # Exported data for BI tools (generated upon run)
-├── main.py                           # Main script to run the analysis
+├── tesla_esg_summary_stats           # Exported summary statistics
+├── tesla_esg_analysis.py             # Main script to run the analysis
 ├── README.md                         # Project README file
+├── findings.md                       # Project findings and key insights
 └── requirements.txt                  # Python dependencies
 ```
 ⚙️ Setup and Installation
@@ -95,8 +97,8 @@ To get this project up and running on your local machine, follow these steps:
 ### 1\. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/Tesla-ESG-Sentiment-Analyzer.git](https://github.com/your-username/Tesla-ESG-Sentiment-Analyzer.git)
-cd Tesla-ESG-Sentiment-Analyzer
+git clone [https://github.com/your-username/Tesla-ESG-Sentiment-Analyzer.git](https://github.com/ashlynmaria/tesla_esg_sentiment.git)
+cd tesla_esg_sentiment
 ```
 ### 2\. Create a Virtual Environment (Recommended)
 
@@ -132,9 +134,9 @@ Place your tesla\_esg.csv file inside the data/ directory. If the file is not fo
 
 After setting up the environment and data, you can run the sentiment analyzer by executing the main.py script.
 
-1.  **Ensure your Python script is named main.py** (or adjust the command below).
+1.  **Ensure your Python script is named tesla_esg_analysis.py** (or adjust the command below).
     
-2.  python main.py
+2.  python tesla_esg_analysis.py
     
 
 The script will perform the following actions:
