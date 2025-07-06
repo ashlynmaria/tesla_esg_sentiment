@@ -121,12 +121,7 @@ numpy
 matplotlib
 seaborn
 plotly
-sqlite3 # Usually built-in with Python, but good to list
-warnings # Built-in
-re # Built-in
 ```
-
-_(Note: sqlite3, warnings, re, logging, datetime, timedelta, and collections are part of Python's standard library and typically don't need explicit installation.)_
 
 ### 4\. Data Preparation
 
@@ -227,6 +222,11 @@ Additionally, the export\_data\_for\_bi() method generates tesla\_esg\_cleaned\_
 *   **Configuration File**: Externalize configuration parameters (e.g., data\_path, db\_name) into a config.ini or settings.py file.
     
 
+📈 Findings
+----------
+
+For a detailed discussion of **Tesla ESG sentiment findings**, please see [findings.md](./findings.md).
+
 🤝 Contributing
 ---------------
 
@@ -240,4 +240,4 @@ This project is open-sourced under the MIT License. See the LICENSE file for mor
 📧 Contact
 ----------
 
-For any questions or inquiries, please get in touch with Ashlyn Benoy at www.linkedin.com/in/ashlyn-benoy-891492275.
+For any questions or inquiries, please get in touch with [Ashlyn Benoy on LinkedIn](https://www.linkedin.com/in/ashlyn-benoy-891492275).
