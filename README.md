@@ -76,7 +76,7 @@ This analyzer is built for modularity and reusability, making it suitable for pr
 ```plaintext
 Tesla-ESG-Sentiment-Analyzer/
 ├── data/
-│   └── tesla_esg.csv                 # Raw GDELT Tesla ESG data (example/placeholder)
+│   └── tesla_esg.csv                 # Raw GDELT Tesla ESG data
 ├── artifacts/
 │   └── plots/
 │       ├── sentiment_dashboard.png   # Generated sentiment visualization
@@ -84,6 +84,7 @@ Tesla-ESG-Sentiment-Analyzer/
 ├── tesla_esg.db                      # SQLite database (generated upon run)
 ├── tesla_esg_cleaned_for_bi.csv      # Exported data for BI tools (generated upon run)
 ├── tesla_esg_summary_stats           # Exported summary statistics
+├── filter_tesla_data.py              # Pre-filtering raw GDELT files for TESLA mentions
 ├── tesla_esg_analysis.py             # Main script to run the analysis
 ├── README.md                         # Project README file
 ├── findings.md                       # Project findings and key insights
@@ -126,6 +127,23 @@ plotly
 ```
 
 ### 4\. Data Preparation
+
+### Filtering Tesla-Related Data from GDELT
+
+If you have a raw GDELT `.gkg.csv` file, you can pre-filter it for Tesla mentions using the provided `filter_tesla_data.py` script:
+
+```bash
+python filter_tesla_data.py
+```
+This script:
+
+Selects the most relevant columns from GDELT Global Knowledge Graph files.
+
+Filters rows mentioning “Tesla” in either V2Themes or Organizations.
+
+Saves the filtered output as data/tesla_esg.csv for further processing.
+
+After filtering, continue with the standard data preparation steps as described above.
 
 Place your tesla\_esg.csv file inside the data/ directory. If the file is not found, the script will automatically generate sample data for demonstration purposes.
 
